@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="mysty.css">
+    <script src="avas.js"></script>
+  </head>
+  <body>
+    <h2>Login Form</h2>
+    <form name="loginform">
+      <div class="imgcontainer">
+        <img src="https://64.media.tumblr.com/3667fd5f79eeee8fb48c459e9822d3d3/2e7f5b52a0d307db-e3/s540x810/18396984de8cd2141595ed4a89356e9d3a2b1f63.gifv" alt="Avatar" class="avatar">
+      </div>
+      <div class="container">
+        <!-- username input -->
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <!-- password input -->
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <!--
+        used type "button" instead of using the default type "submit"
+        to eliminate the button acting as a submitter. This prevents
+        users with wrong credentials from redirecting to success login page.
+        -->
+        <button type="button" value="login" onclick="login()">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <!-- cancel button redirect user to SignUpForm.html -->
+        <a href="SignUpForm.html"><button type="button" class="cancelbtn" >Cancel</button></a>
+        <!-- forgot Password link and redirect user to the ForgotPassword.html -->
+        <span class="psw">Forgot <a href="ForgotPassword.html">password?</a></span>
+      </div>
+    </form>
+  </body>
+</html>
+
+ 
